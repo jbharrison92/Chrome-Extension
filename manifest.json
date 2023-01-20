@@ -1,0 +1,22 @@
+{
+    "name" : "Our awesome weather extension",
+    "manifest_version": 3,
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "js" : ["jquery.min.js", "./main.js"],
+            "css" : ["style.css"]
+        }
+    ],
+    "icons": {
+        "16": "icon.png"
+    },
+    "browser_action": {
+        "browser_style": true,
+        "default_title": "Weather",
+        "default_popup": "index.html"
+    },
+    "permissions": ["navigator"]
+}
+
+
